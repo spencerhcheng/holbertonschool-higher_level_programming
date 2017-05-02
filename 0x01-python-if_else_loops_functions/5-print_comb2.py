@@ -2,7 +2,7 @@
 num = 00
 
 while num < 99:
-    print('{}, '.format(num), end="")
+    print('{:02d}, '.format(num), end="")
     num = num + 1
 
 print('99')
