@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-letters = ""
+letter = 97
 
-for i in range(97, 123):
-    letters += chr(i)
-print(letters, end="")
+while (letter < 123):
+    print(chr(letter), end="")
+    letter += 1
