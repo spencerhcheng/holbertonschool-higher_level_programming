@@ -3,4 +3,4 @@ letters = ""
 
 for i in range(97, 123):
     letters += chr(i)
-print(letters)
+print(letters, end="")
