@@ -3,4 +3,4 @@ letter = 97
 
 while (letter < 123):
     print(chr(letter), end="")
-    letter += 1
+    letter = letter +  1
