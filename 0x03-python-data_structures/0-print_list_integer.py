@@ -2,6 +2,6 @@
 def print_list_integer(my_list=[]):
     i = len(my_list)
     j = 0
-    while j <= i - 1:
-        print ("{:d}".format(my_list[j]))
+    while j < i:
+        print("{:d}".format(my_list[j]))
         j = j + 1
