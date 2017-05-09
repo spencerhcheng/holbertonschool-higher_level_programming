@@ -3,4 +3,4 @@ def element_at(my_list, idx):
     if idx > str_len:
         return (None)
 
-    return("{:d}".format(my_list[idx]))
+    return(my_list[idx])
