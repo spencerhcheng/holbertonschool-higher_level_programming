@@ -2,7 +2,8 @@
 def max_integer(my_list=[]):
     max = 0
 
-    for i, val in enumerate(my_list):
-        if val > max:
-            max = val
+    if my_list is not None:
+        for i, val in enumerate(my_list):
+            if val > max:
+                max = val
     return max
