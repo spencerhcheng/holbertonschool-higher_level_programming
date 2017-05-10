@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if matrix is not None or matrix != [[]]:
+    if matrix is None or matrix == [[]]:
+        print("")
+    else:
         for x in matrix:
             for (i, val) in enumerate(x):
                 if i < len(x) - 1:
