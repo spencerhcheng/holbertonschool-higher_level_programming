@@ -7,4 +7,3 @@ def only_diff_elements(set_1, set_2):
             if x == i:
                 set_combo.remove(i)
     return set_combo
-             
