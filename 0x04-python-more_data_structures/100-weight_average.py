@@ -5,8 +5,8 @@ def weight_average(my_list=[]):
 
     my_dict = dict(my_list)
 
-    list_product = 10
-    list_sum = 10
+    list_product = 0
+    list_sum = 0
 
     for k, v in my_dict.items():
         list_product = list_product + (k * v)
