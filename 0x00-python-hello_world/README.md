@@ -15,7 +15,7 @@ Concepts to be acquainted with
 * [ ] -- What are indexing and slicing in Python
 * [ ] -- What is the official Holberton Python coding style and to check code with PEP 8
 
-### 0. RUN PYTHON FILE
+#### 0. RUN PYTHON FILE
 A Shell script that runs a Python script. The Python file name will be saved in the environmental variable $PYFILE
 
 #### 1. RUN INLINE
