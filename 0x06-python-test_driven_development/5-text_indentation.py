@@ -1,21 +1,25 @@
 #!/usr/bin/python3
 def text_indentation(text):
-    flag = 0
+    
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-    for x, ele in enumerate(text):
-        if ((text[x] == '.' or text[x] == '?' or text[x] == ':') and (text[x + 1].isspace())):
-            flag = 1
-            x = x + 1
-            print("{:s}\n".format(text[x]))
+    for char in ['.', '?', ':']:
+        if char in text:
+            text = text.replace(char, char + "@")
 
-        elif ((text[x] == '.' or text[x] == '?' or text[x] == ':') and not (text[x + 1].isspace())):
-            orubt("{:s}\n".format(text[x]))
+    new_list = text.split('@')
+   
+    for idx in range(len(new_list)):
+        if new_list[idx] == "":
+            del new_list[idx]
+ 
+    for idx, line in enumerate(new_list):
+        new_list[idx] = line.strip()        
 
-        else:
-            if flag == 1:
-                x += 1
-                print("{:s}".format(text[x]), end="")
-            else:
-                print("{:s}".format(text[x]), end="")
+    new_str = ('\n\n'.join(new_list))
+
+    if new_str[-1] == '.' or new_str[-1] == '?' or new_str[-1] == ':':
+        new_str += '\n'
+
+    print(new_str)
