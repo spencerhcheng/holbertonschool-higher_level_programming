@@ -48,3 +48,11 @@ Program prints "object-oriented programming with Python" followed by a new line
 
 ### 9. EASTER EGG
 A Python script that prints "The Zen of Python", by Tim Peters, followed aby a new line.
+
+#### AUTHOR
+
+Twitter: @spencerhcheng
+
+LinkedIn: https://www.linkedin.com/in/spencer-cheng-284b4b55
+
+Github: @spencerhcheng
