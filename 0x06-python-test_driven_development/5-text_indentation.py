@@ -16,10 +16,7 @@ def text_indentation(text):
 
     for idx, line in enumerate(new_list):
         new_list[idx] = line.strip()
-
+    
     new_str = ('\n\n'.join(new_list))
-
-    if new_str[-1] == '.' or new_str[-1] == '?' or new_str[-1] == ':':
-        new_str += '\n'
 
     print(new_str)
