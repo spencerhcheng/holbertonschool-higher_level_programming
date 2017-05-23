@@ -18,19 +18,3 @@ Area: 10000000000000000000000000000000000000000000000000000000000000000000000000
 >>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 Area: 0 for size: 0
 
-Expected Failures:
-==================
-
-# size is not int
->>> my_square = Square("size")
-Exception raised:
-Traceback (most recent call last):
-        ...
-TypeError: size must be an integer
-
-# size is negative
->>> my_square = Square(-17)
-Exception raised:
-Traceback (most recent call last):
-        ...
-ValueError: size must be >= 0
