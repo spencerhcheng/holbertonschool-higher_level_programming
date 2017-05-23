@@ -23,12 +23,14 @@ Expected Failures:
 
 # size is not int
 >>> my_square = Square("size")
-Traceback (most recent call last)
+Exception raised:
+Traceback (most recent call last):
         ...
 TypeError: size must be an integer
 
 # size is negative
 >>> my_square = Square(-17)
-Traceback (most recent call last)
+Exception raised:
+Traceback (most recent call last):
         ...
 ValueError: size must be >= 0
