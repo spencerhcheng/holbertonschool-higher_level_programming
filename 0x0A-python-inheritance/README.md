@@ -19,7 +19,7 @@ The goal of this project is to understand and obtain experience with inheritance
 ### REQUIREMENTS
 All files are interpreted and compiled on Ubuntu 14.04 LTS using Python3 (version 3.4.3). Files are written in accordance to the PEP 8 style guideline.
 
-####.  0. Lookup
+####. 0. Lookup
 A function that returns the list of available attributes and methods of an object. Returns a `list` object.
 
 Prototype: `def lookup(obj):`
