@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 
 
 class Student:
@@ -9,5 +8,4 @@ class Student:
         self.age = age
 
     def to_json(self):
-        f = json.dumps(self.__dict__)
-        return json.loads(f)
+        return self.__dict__
