@@ -36,4 +36,10 @@ Prototype: `def text_indentation(text):`
 #### 5. Max integer - Unittest
 Unittests for the function prototype: `def max_integer(list=[]):`. Test file should be inside a folder `tests`. This test uses the `unnittest module` and is executed by the command: `python3 - m unittest tests.6-max_integer-test`
 
+### AUTHOR
 
+Twitter: @spencerhcheng
+
+LinkedIn: https://www.linkedin.com/in/spencer-cheng-284b4b55
+
+Github: @spencerhcheng

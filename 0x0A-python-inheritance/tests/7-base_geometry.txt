@@ -1,0 +1,28 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Expected passes:
+    
+    # Integers
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator(5, 3)
+
+    
+    # Determine type
+    >>> type(bg)
+    <class '7-base_geometry.BaseGeometry'>
+
+    # Print dir()
+    >>> dir(BaseGeometry())
+    ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'area', 'integer_validator']
+
+    # Print dict
+    bg.__dict__
+    {'value': 3}
+
+Expected Errors:
+
+    # Pass in strings
+    >>> bg.integer_validator("Holberton", "42")
+    Traceback (most recent call last):
+            ...
+    TypeError: Holberton must be an integer
