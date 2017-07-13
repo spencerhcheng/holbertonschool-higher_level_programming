@@ -1,6 +1,6 @@
 ## 0x0D SQL Introduction
 
-![SQL](https://azure.microsoft.com/svghandler/sql-database/?width=600&height=315}
+![SQL](https://azure.microsoft.com/svghandler/sql-database/?width=600&height=315)
 
 #### AUTHOR
 Spencer Cheng: [github account](https://github.com/spencerhcheng), [twitter](https://twitter.com/spencerhcheng)
