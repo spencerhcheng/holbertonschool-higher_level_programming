@@ -10,7 +10,8 @@ if __name__ == '__main__':
                          passwd=sys.argv[2], db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT states.id, states.name\
-              FROM states WHERE states.name like BINARY 'N%' ORDER BY states.id ASC")
+              FROM states WHERE states.name\
+              like BINARY 'N%' ORDER BY states.id ASC")
     rows = c.fetchall()
     for x in rows:
         print(x)
