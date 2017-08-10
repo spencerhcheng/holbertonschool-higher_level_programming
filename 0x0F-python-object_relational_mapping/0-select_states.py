@@ -9,3 +9,5 @@ c.execute("SELECT states.id, states.name FROM states ORDER BY states.id ASC")
 rows = c.fetchall()
 for x in rows:
     print(x)
+c.close()
+db.close()
