@@ -16,9 +16,8 @@ if __name__ == '__main__':
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    for state in session.query(State).filter(State.name.like(sys.argv[4])).all():
-        try:
-            print("{}".format(state.id))
-        except:
-            print("Not found")
+    newState = State(name = 'Louisiana')
+    session.add(newState)
+    session.flush()
+    print("{}".format(newState.id))
     session.close()
