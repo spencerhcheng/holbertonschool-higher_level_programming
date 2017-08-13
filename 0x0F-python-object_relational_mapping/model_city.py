@@ -16,4 +16,5 @@ class City(Base):
                            unique=True, autoincrement=True,
                            primary_key=True)
     name = sqlalchemy.Column(sqlalchemy.String(128), nullable=False)
-    state_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.ForeignKey('states.id'), nullable=False)
+    state_id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy
+                                 .ForeignKey('states.id'), nullable=False)
