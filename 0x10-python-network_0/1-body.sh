@@ -1,3 +1,3 @@
 #!/bin/bash
 # Displays the body of the redirected response
-curl -L "$1"
+curl -sL "$1"
