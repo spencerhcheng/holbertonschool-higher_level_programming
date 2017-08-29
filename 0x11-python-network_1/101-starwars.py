@@ -14,3 +14,14 @@ if __name__ == "__main__":
     results = response_obj['results']
     for person in results:
         print(person['name'])
+
+    next_page = response_obj['next']
+    while next_page is not None:
+        r = requests.get(next_page)
+        response_obj = r.json()
+        results = response_obj['results']
+        for person in results:
+            print(person['name'])
+        next_page = response_obj['next']
+        if next_page is None:
+            break
