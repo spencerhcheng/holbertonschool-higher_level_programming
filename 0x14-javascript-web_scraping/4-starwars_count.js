@@ -5,7 +5,7 @@ const request = require('request');
 let count = 0;
 request.get(myUrl, function (err, res, body) {
   if (err) {
-    console.log(err);
+    return console.log(err);
   }
   let json = JSON.parse(body);
   let filmsList = json['results'];
