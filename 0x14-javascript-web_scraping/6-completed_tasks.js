@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-let myUrl = 'https://jsonplaceholder.typicode.com/todos';
+let myUrl = process.argv[2];
 let idObj = {};
 const request = require('request');
 
