@@ -18,7 +18,7 @@ request.get(myUrl, function (err, res, body) {
       let charNum = json[i].slice(-3).replace(/\//g, '');
       nameList[charNum] = JSON.parse(body)['name'];
       if (i === json.length - 1) {
-        for (var key in nameList) {
+        for (let key in nameList) {
           if (key.length === 1) {
             let singleDigKey = '0' + String(key);
             nameArray.push(singleDigKey + nameList[key]);
