@@ -6,13 +6,13 @@ const nameList = {};
 let nameArray = [];
 
 request.get(myUrl, function (err, res, body) {
-  if (err) {
+  if (err || res.statusCode !== 200) {
     return console.log(err);
   }
   let json = JSON.parse(body)['characters'];
   for (let i = 0; i < json.length; i++) {
     request.get(json[i], function (err, res, body) {
-      if (err) {
+      if (err || res.statusCode !== 200) {
         return console.log(err);
       }
       let charNum = json[i].slice(-3).replace(/\//g, '');
