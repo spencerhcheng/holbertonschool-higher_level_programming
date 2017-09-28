@@ -18,19 +18,17 @@ request.get(myUrl, function (err, res, body) {
       let charNum = json[i].slice(-3).replace(/\//g, '');
       nameList[charNum] = JSON.parse(body)['name'];
       if (i === json.length - 1) {
-        for (let key in nameList) {
-          if (key.length === 1) {
-            let singleDigKey = '0' + String(key);
-            nameArray.push(singleDigKey + nameList[key]);
-          } else {
-            nameArray.push(key + nameList[key]);
-          }
+        for (var key in nameList) {
+          nameArray.push([parseInt(key), nameList[key]]);
         }
-        nameArray = nameArray.sort();
-        for (let j = 0; j < nameArray.length; j++) {
-          console.log(nameArray[j].slice(2));
-        }
+        printArr(nameArray);
       }
     });
   }
 });
+
+function printArr (list) {
+  for (let i = 0; i < list.length; i++) {
+    console.log(list[i][1]);
+  }
+}
