@@ -17,7 +17,8 @@ request.get(myUrl, function (err, res, body) {
       }
       let charNum = json[i].slice(-3).replace(/\//g, '');
       nameList[charNum] = JSON.parse(body)['name'];
-      if (i === json.length - 1) {
+      let size = Object.keys(nameList).length;
+      if (size === json.length) {
         for (var key in nameList) {
           nameArray.push([parseInt(key), nameList[key]]);
         }
