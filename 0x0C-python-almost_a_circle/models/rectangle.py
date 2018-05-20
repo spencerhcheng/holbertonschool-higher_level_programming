@@ -84,7 +84,7 @@ class Rectangle(Base):
         if not type(value) == int:
             raise TypeError("{} must be an integer".format(attr))
         if value <= 0:
-            raise ValueError("{} must be > 0.".format(attr))
+            raise ValueError("{} must be > 0".format(attr))
 
     def validate_zero(self, attr, value):
         """
@@ -94,4 +94,4 @@ class Rectangle(Base):
         if not type(value) == int:
             raise TypeError("{} must be an integer".format(attr))
         if value < 0:
-            raise ValueError("{} must be >= 0.".format(attr))
+            raise ValueError("{} must be >= 0".format(attr))
